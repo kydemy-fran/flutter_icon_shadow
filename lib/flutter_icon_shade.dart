@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'dart:ui' as ui;
 
-class IconShadeWidget extends StatelessWidget {
+class IconShade extends StatelessWidget {
   final Icon icon;
   final bool showShadow;
   final Color? shadowColor;
 
-  IconShadeWidget(this.icon, {this.showShadow = true, this.shadowColor});
+  IconShade(this.icon, {this.showShadow = true, this.shadowColor});
 
   @override
   Widget build(BuildContext context) {

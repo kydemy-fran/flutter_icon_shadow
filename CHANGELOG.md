@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## [2.0.3]
+
+- Rename component - remove redundant "Widget"
+
 ## [2.0.2]
 
 - Rename component to match package name
