@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:icon_shadow/icon_shadow.dart';
+import 'package:flutter_icon_shade/flutter_icon_shade.dart';
 
 void main() => runApp(MyApp());
 
@@ -25,14 +25,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
-
-
   @override
   Widget build(BuildContext context) {
-
-
-
-
     return Scaffold(
       backgroundColor: Colors.black54,
       appBar: AppBar(
@@ -48,36 +42,50 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
               children: <Widget>[
                 IconShadowWidget(Icon(Icons.lightbulb_outline,
                     color: Colors.lightBlueAccent, size: 36)),
-                IconShadowWidget(Icon(Icons.lightbulb_outline,
-                    color: Colors.lightBlueAccent, size: 36),shadowColor: Colors.lightBlueAccent.shade100,),
-                IconShadowWidget(Icon(Icons.lightbulb_outline,
-                    color: Colors.lightBlueAccent, size: 36),showShadow: false,)
+                IconShadowWidget(
+                  Icon(Icons.lightbulb_outline,
+                      color: Colors.lightBlueAccent, size: 36),
+                  shadowColor: Colors.lightBlueAccent.shade100,
+                ),
+                IconShadowWidget(
+                  Icon(Icons.lightbulb_outline,
+                      color: Colors.lightBlueAccent, size: 36),
+                  showShadow: false,
+                )
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                IconShadowWidget(Icon(Icons.home,
-                    color: Colors.green.shade900, size: 36),shadowColor: Colors.yellowAccent,),
-                IconShadowWidget(Icon(Icons.home,
-                    color: Colors.green.shade900, size: 36)),
-                IconShadowWidget(Icon(Icons.home,
-                    color: Colors.green.shade900, size: 36),showShadow: false,)
+                IconShadowWidget(
+                  Icon(Icons.home, color: Colors.green.shade900, size: 36),
+                  shadowColor: Colors.yellowAccent,
+                ),
+                IconShadowWidget(
+                    Icon(Icons.home, color: Colors.green.shade900, size: 36)),
+                IconShadowWidget(
+                  Icon(Icons.home, color: Colors.green.shade900, size: 36),
+                  showShadow: false,
+                )
               ],
             ),
-
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                IconShadowWidget(Icon(Icons.access_alarm,
-                    color: Colors.black54, size: 36),shadowColor: Colors.yellowAccent.shade400,),
-                IconShadowWidget(Icon(Icons.access_alarm,
-                    color: Colors.black54, size: 36),shadowColor: Colors.red.shade400,),
-                IconShadowWidget(Icon(Icons.access_alarm,
-                    color: Colors.black54, size: 36),shadowColor: Colors.cyanAccent.shade400,)
+                IconShadowWidget(
+                  Icon(Icons.access_alarm, color: Colors.black54, size: 36),
+                  shadowColor: Colors.yellowAccent.shade400,
+                ),
+                IconShadowWidget(
+                  Icon(Icons.access_alarm, color: Colors.black54, size: 36),
+                  shadowColor: Colors.red.shade400,
+                ),
+                IconShadowWidget(
+                  Icon(Icons.access_alarm, color: Colors.black54, size: 36),
+                  shadowColor: Colors.cyanAccent.shade400,
+                )
               ],
             ),
-
           ],
         ),
       ),

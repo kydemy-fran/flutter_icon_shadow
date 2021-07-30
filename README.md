@@ -1,21 +1,21 @@
-# Icon shadow
+# Flutter Icon Shade
 
 Flutter Icon shadow
 
+Forked from [flutter_flutter_icon_shade](https://github.com/chenasraf/flutter_flutter_icon_shade) for
+null safety.
 
-![](https://github.com/mehrtarh/flutter_icon_shadow/blob/master/sample.PNG?raw=true)
+![sample](https://github.com/chenasraf/flutter_flutter_icon_shade/blob/master/sample.PNG?raw=true)
 
+## How to use
 
-#### how to use:
-
-##### 1. add dependencies to pubspec.yaml:
+### 1. Add dependencies to pubspec.yaml
 
 ```yaml
- icon_shadow: ^1.0.1
+flutter_icon_shade: ^1.0.1
 ```
 
-##### 2. add icons:
-
+### 2. Add icons
 
 ```dart
 Row(

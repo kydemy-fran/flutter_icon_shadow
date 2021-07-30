@@ -1,3 +1,9 @@
- ##[1.0.1] 
+# CHANGELOG
 
-* icon shadow
+## [2.0.1]
+
+- Null safety
+
+## [1.0.1]
+
+- icon shadow
