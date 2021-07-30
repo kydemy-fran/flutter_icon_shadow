@@ -40,14 +40,14 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                IconShadowWidget(Icon(Icons.lightbulb_outline,
+                IconShadeWidget(Icon(Icons.lightbulb_outline,
                     color: Colors.lightBlueAccent, size: 36)),
-                IconShadowWidget(
+                IconShadeWidget(
                   Icon(Icons.lightbulb_outline,
                       color: Colors.lightBlueAccent, size: 36),
                   shadowColor: Colors.lightBlueAccent.shade100,
                 ),
-                IconShadowWidget(
+                IconShadeWidget(
                   Icon(Icons.lightbulb_outline,
                       color: Colors.lightBlueAccent, size: 36),
                   showShadow: false,
@@ -57,13 +57,13 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                IconShadowWidget(
+                IconShadeWidget(
                   Icon(Icons.home, color: Colors.green.shade900, size: 36),
                   shadowColor: Colors.yellowAccent,
                 ),
-                IconShadowWidget(
+                IconShadeWidget(
                     Icon(Icons.home, color: Colors.green.shade900, size: 36)),
-                IconShadowWidget(
+                IconShadeWidget(
                   Icon(Icons.home, color: Colors.green.shade900, size: 36),
                   showShadow: false,
                 )
@@ -72,15 +72,15 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                IconShadowWidget(
+                IconShadeWidget(
                   Icon(Icons.access_alarm, color: Colors.black54, size: 36),
                   shadowColor: Colors.yellowAccent.shade400,
                 ),
-                IconShadowWidget(
+                IconShadeWidget(
                   Icon(Icons.access_alarm, color: Colors.black54, size: 36),
                   shadowColor: Colors.red.shade400,
                 ),
-                IconShadowWidget(
+                IconShadeWidget(
                   Icon(Icons.access_alarm, color: Colors.black54, size: 36),
                   shadowColor: Colors.cyanAccent.shade400,
                 )
