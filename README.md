@@ -2,10 +2,10 @@
 
 Flutter Icon shadow
 
-Forked from [flutter_flutter_icon_shade](https://github.com/chenasraf/flutter_flutter_icon_shade) for
+Forked from [flutter_flutter_icon_shade](https://github.com/chenasraf/flutter_icon_shade) for
 null safety.
 
-![sample](https://github.com/chenasraf/flutter_flutter_icon_shade/blob/master/sample.PNG?raw=true)
+![sample](https://github.com/chenasraf/flutter_icon_shade/blob/master/sample.PNG?raw=true)
 
 ## How to use
 
