@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## [2.0.6]
+
+- Update license to MIT
+
 ## [2.0.5]
 
 - Package has been renamed to `flutter_icon_shadow`, and component has been renamed to `IconShadow`

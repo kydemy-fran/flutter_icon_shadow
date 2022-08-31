@@ -1,6 +1,6 @@
 name: flutter_icon_shadow
-description: flutter icon shadow.
-version: 2.0.5
+description: Adds shadow under an icon in Flutter. Customizable with color, blur and offset.
+version: 2.0.6
 homepage: https://github.com/chenasraf/flutter_icon_shadow
 
 environment:
