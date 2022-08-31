@@ -32,7 +32,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black54,
+      backgroundColor: Colors.grey[100],
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: const Text('Flutter Icon Shadow'),
@@ -58,6 +58,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                     size: 36,
                   ),
                   shadowColor: Colors.lightBlueAccent[100],
+                  shadowOffset: const Offset(2, 2),
                 ),
                 const IconShadow(
                   Icon(
@@ -86,6 +87,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                     color: Colors.green[900],
                     size: 36,
                   ),
+                  shadowOffset: Offset(2, 2),
                 ),
                 IconShadow(
                   Icon(
@@ -115,6 +117,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                     size: 36,
                   ),
                   shadowColor: Colors.red[400],
+                  shadowOffset: Offset(2, 2),
                 ),
                 IconShadow(
                   const Icon(

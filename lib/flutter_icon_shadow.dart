@@ -6,25 +6,60 @@ class IconShadow extends StatelessWidget {
   final bool showShadow;
   final double shadowBlurSigma;
   final Color? shadowColor;
+  final Offset? shadowOffset;
 
-  const IconShadow(this.icon,
-      {Key? key, this.showShadow = true, this.shadowColor, this.shadowBlurSigma = 0.9})
-      : super(key: key);
+  const IconShadow(
+    this.icon, {
+    Key? key,
+    this.showShadow = true,
+    this.shadowColor,
+    this.shadowBlurSigma = 0.9,
+    this.shadowOffset,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final list = <Widget>[
-      if (showShadow) ..._buildShadowWidgets(),
-      IconTheme(
-        data: const IconThemeData(opacity: 1.0),
+    final compensationPadding = _getCompensationPadding();
+
+    if (!showShadow) {
+      return Padding(
+        padding: compensationPadding,
         child: icon,
+      );
+    }
+
+    final _offset = shadowOffset ?? Offset.zero;
+
+    final list = <Widget>[
+      Positioned(
+        top: _offset.dy < 0 ? _offset.dy / 2 : null,
+        left: _offset.dx < 0 ? _offset.dx / 2 : null,
+        bottom: _offset.dy > 0 ? -_offset.dy / 2 : null,
+        right: _offset.dx > 0 ? -_offset.dx / 2 : null,
+        child: Stack(
+          alignment: Alignment.center,
+          children: _buildShadowWidgets(),
+        ),
       ),
+      icon,
     ];
 
     return Stack(
       alignment: Alignment.center,
       children: list,
     );
+  }
+
+  EdgeInsets _getCompensationPadding() {
+    final _offset = shadowOffset ?? Offset.zero;
+
+    final compensationPadding = EdgeInsets.only(
+      top: _offset.dy < 0 ? -_offset.dy : 0,
+      bottom: _offset.dy > 0 ? _offset.dy : 0,
+      left: _offset.dx < 0 ? -_offset.dx : 0,
+      right: _offset.dx > 0 ? _offset.dx : 0,
+    );
+    return compensationPadding;
   }
 
   List<Widget> _buildShadowWidgets() {
@@ -247,7 +282,7 @@ class IconShadow extends StatelessWidget {
             sigmaX: shadowBlurSigma,
             sigmaY: shadowBlurSigma,
           ),
-          child: IconTheme(data: const IconThemeData(opacity: 1.0), child: icon),
+          child: IconTheme(data: const IconThemeData(opacity: 0.0), child: icon),
         ),
       ),
     ];
