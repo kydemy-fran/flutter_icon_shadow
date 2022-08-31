@@ -1,13 +1,28 @@
 import 'package:flutter/material.dart';
 import 'dart:ui' as ui;
 
+/// A widget that draws a shadow around its child [Icon].
+/// You may modify the shadow color, blur and offset using the [shadowColor], [shadowBlurSigma] and [shadowOffset]
+/// properties.
 class IconShadow extends StatelessWidget {
+  /// The icon to draw a shadow around.
   final Icon icon;
+
+  /// Whether to display or hide the shadow.
   final bool showShadow;
+
+  /// The blur sigma of the shadow.
   final double shadowBlurSigma;
+
+  /// The color of the shadow.
   final Color? shadowColor;
+
+  /// The offset of the shadow.
   final Offset? shadowOffset;
 
+  /// A widget that draws a shadow around its child [Icon].
+  /// You may modify the shadow color, blur and offset using the [shadowColor], [shadowBlurSigma] and [shadowOffset]
+  /// properties.
   const IconShadow(
     this.icon, {
     Key? key,
