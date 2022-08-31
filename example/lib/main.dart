@@ -1,9 +1,13 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_icon_shade/flutter_icon_shade.dart';
+// ignore_for_file: depend_on_referenced_packages, library_private_types_in_public_api
 
-void main() => runApp(MyApp());
+import 'package:flutter/material.dart';
+import 'package:flutter_icon_shadow/flutter_icon_shadow.dart';
+
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -12,13 +16,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
       ),
-      home: MyHomePage(),
+      home: const MyHomePage(),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key}) : super(key: key);
+  const MyHomePage({Key? key}) : super(key: key);
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
@@ -31,7 +35,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
       backgroundColor: Colors.black54,
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text("Tab Bar Animation"),
+        title: const Text('Flutter Icon Shadow'),
       ),
       body: Center(
         child: Column(
@@ -40,16 +44,27 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                IconShade(Icon(Icons.lightbulb_outline,
-                    color: Colors.lightBlueAccent, size: 36)),
-                IconShade(
-                  Icon(Icons.lightbulb_outline,
-                      color: Colors.lightBlueAccent, size: 36),
-                  shadowColor: Colors.lightBlueAccent.shade100,
+                const IconShadow(
+                  Icon(
+                    Icons.lightbulb_outline,
+                    color: Colors.lightBlueAccent,
+                    size: 36,
+                  ),
                 ),
-                IconShade(
-                  Icon(Icons.lightbulb_outline,
-                      color: Colors.lightBlueAccent, size: 36),
+                IconShadow(
+                  const Icon(
+                    Icons.lightbulb_outline,
+                    color: Colors.lightBlueAccent,
+                    size: 36,
+                  ),
+                  shadowColor: Colors.lightBlueAccent[100],
+                ),
+                const IconShadow(
+                  Icon(
+                    Icons.lightbulb_outline,
+                    color: Colors.lightBlueAccent,
+                    size: 36,
+                  ),
                   showShadow: false,
                 )
               ],
@@ -57,14 +72,27 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                IconShade(
-                  Icon(Icons.home, color: Colors.green.shade900, size: 36),
+                IconShadow(
+                  Icon(
+                    Icons.home,
+                    color: Colors.green[900],
+                    size: 36,
+                  ),
                   shadowColor: Colors.yellowAccent,
                 ),
-                IconShade(
-                    Icon(Icons.home, color: Colors.green.shade900, size: 36)),
-                IconShade(
-                  Icon(Icons.home, color: Colors.green.shade900, size: 36),
+                IconShadow(
+                  Icon(
+                    Icons.home,
+                    color: Colors.green[900],
+                    size: 36,
+                  ),
+                ),
+                IconShadow(
+                  Icon(
+                    Icons.home,
+                    color: Colors.green[900],
+                    size: 36,
+                  ),
                   showShadow: false,
                 )
               ],
@@ -72,17 +100,29 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                IconShade(
-                  Icon(Icons.access_alarm, color: Colors.black54, size: 36),
-                  shadowColor: Colors.yellowAccent.shade400,
+                IconShadow(
+                  const Icon(
+                    Icons.access_alarm,
+                    color: Colors.black54,
+                    size: 36,
+                  ),
+                  shadowColor: Colors.yellowAccent[400],
                 ),
-                IconShade(
-                  Icon(Icons.access_alarm, color: Colors.black54, size: 36),
-                  shadowColor: Colors.red.shade400,
+                IconShadow(
+                  const Icon(
+                    Icons.access_alarm,
+                    color: Colors.black54,
+                    size: 36,
+                  ),
+                  shadowColor: Colors.red[400],
                 ),
-                IconShade(
-                  Icon(Icons.access_alarm, color: Colors.black54, size: 36),
-                  shadowColor: Colors.cyanAccent.shade400,
+                IconShadow(
+                  const Icon(
+                    Icons.access_alarm,
+                    color: Colors.black54,
+                    size: 36,
+                  ),
+                  shadowColor: Colors.cyanAccent[400],
                 )
               ],
             ),
