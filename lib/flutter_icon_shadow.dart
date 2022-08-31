@@ -297,7 +297,8 @@ class IconShadow extends StatelessWidget {
             sigmaX: shadowBlurSigma,
             sigmaY: shadowBlurSigma,
           ),
-          child: IconTheme(data: const IconThemeData(opacity: 0.0), child: icon),
+          child:
+              IconTheme(data: const IconThemeData(opacity: 0.0), child: icon),
         ),
       ),
     ];
