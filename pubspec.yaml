@@ -12,3 +12,7 @@ dependencies:
   flutter_lints: ^2.0.1
 
 flutter: null
+
+script_runner:
+  scripts:
+    - docs: flutter pub global run dartdoc:dartdoc

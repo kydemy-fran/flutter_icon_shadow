@@ -40,7 +40,7 @@ Row(
         size: 36,
       ),
       shadowColor: Colors.lightBlueAccent.shadow100,
-      shadowOffset: Offset(2, 2), // optional, may cause clipping by bounding boxh
+      shadowOffset: Offset(2, 2), // optional, may cause clipping by bounding box
     ),
     IconShadow(
       Icon(
