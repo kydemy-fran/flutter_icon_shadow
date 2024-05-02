@@ -1,3 +1,8 @@
+## 2.0.7
+
+- Update dependencies
+- Update SDK constraints
+
 ## 2.0.6
 
 - Update license to MIT

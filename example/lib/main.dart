@@ -6,7 +6,7 @@ import 'package:flutter_icon_shadow/flutter_icon_shadow.dart';
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   // This widget is the root of your application.
   @override
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key}) : super(key: key);
+  const MyHomePage({super.key});
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
@@ -87,7 +87,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                     color: Colors.green[900],
                     size: 36,
                   ),
-                  shadowOffset: Offset(2, 2),
+                  shadowOffset: const Offset(2, 2),
                 ),
                 IconShadow(
                   Icon(
@@ -117,7 +117,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                     size: 36,
                   ),
                   shadowColor: Colors.red[400],
-                  shadowOffset: Offset(2, 2),
+                  shadowOffset: const Offset(2, 2),
                 ),
                 IconShadow(
                   const Icon(
@@ -135,3 +135,4 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
     );
   }
 }
+
